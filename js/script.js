@@ -1,4 +1,4 @@
-// ===== CONFIGURACIÓN =====
+
 const CLAVE = "historias";                 // Nombre con el que se guardan en localStorage
 const DURACION = 3000;                     // Cada historia se muestra 3 segundos
 const UN_DIA = 24 * 60 * 60 * 1000;        // 24 horas en milisegundos
