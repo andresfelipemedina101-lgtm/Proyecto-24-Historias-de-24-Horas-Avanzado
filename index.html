@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historias 24h</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main class="contenedor">
+        <header class="encabezado">
+            <h1>Historias 24h</h1>
+            <p>Publica una imagen y desaparecerá automáticamente en 24 horas.</p>
+        </header>
+
+        <section class="barra-historias">
+            <button id="btnAgregar" class="historia agregar" title="Agregar historia">+</button>
+            <div id="listaHistorias" class="lista-historias"></div>
+            <input type="file" id="inputImagen" accept="image/*" hidden>
+        </section>
+
+        <p id="mensaje"></p>
+
+        <p id="sinHistorias" class="sin-historias">Aún no hay historias. Pulsa el botón <strong>+</strong> para publicar la primera.</p>
+    </main>
+
+    <div id="visor" class="visor oculto">
+        <div class="visor-contenido">
+            <div id="barrasProgreso" class="barras-progreso"></div>
+
+            <div class="visor-cabecera">
+                <button id="btnCerrar" class="btn-cerrar" title="Cerrar">&times;</button>
+            </div>
+
+            <img id="imagenVisor" alt="Historia">
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
